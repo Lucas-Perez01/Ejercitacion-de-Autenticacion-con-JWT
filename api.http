@@ -9,8 +9,8 @@ POST {{hostname}}/register
 Content-Type: application/json
 
 {
-  "username": "testuser",
-  "password": "password123"
+  "usuario": "Lucas",
+  "contraseña": "Lucas123"
 }
 
 ### Registrar otro usuario
@@ -18,8 +18,8 @@ POST {{hostname}}/register
 Content-Type: application/json
 
 {
-  "username": "testuser2",
-  "password": "password456"
+  "usuario": "testuser2",
+  "contraseña": "password456"
 }
 
 ### Iniciar sesión para obtener el token
@@ -29,8 +29,8 @@ POST {{hostname}}/login
 Content-Type: application/json
 
 {
-  "username": "testuser",
-  "password": "password123"
+  "usuario": "Lucas",
+  "contraseña": "Lucas123"
 }
 
 ### Iniciar sesión con usuario incorrecto
@@ -38,8 +38,8 @@ POST {{hostname}}/login
 Content-Type: application/json
 
 {
-  "username": "nouser",
-  "password": "wrongpassword"
+  "usuario": "nouser",
+  "contraseña": "wrongpassword"
 }
 
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 ### Crear una nueva tarea
 POST {{hostname}}/tareas
 Content-Type: application/json
-Authorization: Bearer {{token}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXN1YXJpbyI6Ikx1Y2FzIiwiaWF0IjoxNzUwOTg3ODYwLCJleHAiOjE3NTA5OTE0NjB9.Y0f8byjJV9p_UNVUaadF1N8kKL3eM9tn4zHGEZDzZmM
 
 {
   "title": "Hacer la compra",
